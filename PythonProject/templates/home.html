@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Flask Galaxy{% endblock %}
+
+{% block content %}
+<section style="text-align: center;">
+    <h1 style="font-size: 3rem; margin-bottom: 1rem; background: linear-gradient(90deg, #00f2fe, #4facfe); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+        Welcome to Flask Galaxy
+    </h1>
+    <p style="font-size: 1.2rem; color: #ccc; max-width: 700px; margin: auto;">
+        Explore a minimalist yet powerful web experience built with Flask. This project showcases routing, dynamic pages, form handling, and a sprinkle of cosmic design ✨.
+    </p>
+    <a href="{{ url_for('contact') }}" style="display: inline-block; margin-top: 2rem; padding: 0.8rem 1.6rem; background: #00f2fe; color: #000; font-weight: bold; border-radius: 30px; text-decoration: none; transition: transform 0.2s;">
+        Get in Touch
+    </a>
+</section>
+{% endblock %}
